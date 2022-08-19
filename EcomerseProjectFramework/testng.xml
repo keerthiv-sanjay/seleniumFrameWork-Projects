@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EcomerseProjectFramework">
+<listeners>
+<listener class-name="Utilities.MyListener"/>
+</listeners>
+
+  <test thread-count="5"   name="verify Login Page">
+    <classes>
+      <class name="TestCases.verifyLoginPage"/>
+    </classes>
+  </test> <!-- EcomerseProjectFramework -->
+  
+  <test thread-count="5"   name="verify Logout Page">
+    <classes>
+      <class name="TestCases.verifyLogoutPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5"  name="verify  Purchase">
+    <classes>
+      <class name="TestCases.verifyPurchase"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5"  name="verify  Adress Update">
+    <classes>
+      <class name="TestCases.verifyAddressUpdate"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5"  name="verify MyAccount">
+    <classes>
+      <class name="TestCases.verifyMyAccountPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- EcomerseProjectFramework -->
